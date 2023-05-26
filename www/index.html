@@ -15,7 +15,7 @@
         <input type="text" placeholder="Qual é o seu nome?" class="inputtext" id="inputnome">
 
         <label>Disciplina</label>
-        <select id="Disciplina">
+        <select id="disciplina">
             <option>Matemática</option>
             <option>MJD</option>
             <option>Português</option>
@@ -23,16 +23,21 @@
         </select>
 
         <label>Disciplina</label>
-        <select id="menção">
+        <select id="mencao">
             <option>MB</option>
             <option>B</option>
             <option>R</option>
             <option>I</option>
         </select>
 
-        <input type="button" id="botao-bonito" value="Cadastrar">
+        <input type="button" id="botao-bonito" value="Cadastrar" onclick="cadastrar()">
+        <input type="button" id="botao-bonito" value="Listar" onclick="listar()">
         <div id="´Saída">
             <p id="nomealuno"></p>
+        </div>
+        <div id="saída">
+            <p id="exibirdisciplina"></p>
+            <p id="exibirmencao"></p>
         </div>
     </div>
 </body>
